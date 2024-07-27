@@ -6,11 +6,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Load your model and encoders
-model = joblib.load('C:/Users/LEGEND/Desktop/InternshipProject/backend/final_rf_model.pkl')
-home_team_encoder = joblib.load('C:/Users/LEGEND/Desktop/InternshipProject/backend/home_team_encoder.pkl')
-away_team_encoder = joblib.load('C:/Users/LEGEND/Desktop/InternshipProject/backend/away_team_encoder.pkl')
-division_encoder = joblib.load('C:/Users/LEGEND/Desktop/InternshipProject/backend/division_encoder.pkl')
-half_time_result_encoder = joblib.load('C:/Users/LEGEND/Desktop/InternshipProject/backend/half_time_result_encoder.pkl')
+model = joblib.load('./final_rf_model.pkl')
+home_team_encoder = joblib.load('./home_team_encoder.pkl')
+away_team_encoder = joblib.load('./away_team_encoder.pkl')
+division_encoder = joblib.load('./division_encoder.pkl')
+half_time_result_encoder = joblib.load('./half_time_result_encoder.pkl')
 
 @app.route('/predict', methods=['POST'])
 def predict():
