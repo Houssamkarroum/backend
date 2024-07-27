@@ -2,3 +2,6 @@ Flask
 Flask_cors
 joblib
 gunicorn
+pandas
+scikit-learn
+numpy
